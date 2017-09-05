@@ -29,5 +29,5 @@ You can test to run unnmaed module with named module by `bash ./OrdinaryJAR_call
 |callee\caller|unnamed|automatic|named|
 |:-----------:|:-----:|:-------:|:---:|
 |unnamed|O|X|X|
-|automatic|X|X|O|
+|automatic|X|O|O|
 |named|X|X|O|
