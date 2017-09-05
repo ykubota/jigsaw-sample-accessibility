@@ -26,9 +26,6 @@ $JAVA_9_HOME/bin/jar -d --file $LIBRARY/*jar
 
 echo "--------------------------------------"
 
-echo "Try named module calls automatic module"
+echo "Try explicit module calls automatic module"
 $JAVA_9_HOME/bin/java -p $LIBRARY:$MODULAR -m com.greetings/com.greetings.Main
-
-echo "Try named module calls unnamed module"
-$JAVA_9_HOME/bin/java -cp $LIBRARY/* -p $MODULAR -m com.greetings/com.greetings.Main
 
