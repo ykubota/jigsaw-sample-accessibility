@@ -28,4 +28,3 @@ echo "--------------------------------------"
 
 echo "Try explicit module calls automatic module"
 $JAVA_9_HOME/bin/java -p $LIBRARY:$MODULAR -m com.greetings/com.greetings.Main
-

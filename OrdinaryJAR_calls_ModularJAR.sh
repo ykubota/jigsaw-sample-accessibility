@@ -31,8 +31,17 @@ echo "--------------------------------------"
 echo "Try automatic module calls explicit module"
 $JAVA_9_HOME/bin/java -p $LIBRARY:$MODULAR -m com.greetings/com.greetings.Main
 
+echo "--------------------------------------"
+
+echo "Try automatic module calls explicit module with using --add-modules"
+$JAVA_9_HOME/bin/java -p $LIBRARY:$MODULAR --add-modules org.astro -m com.greetings/com.greetings.Main
+
+echo "--------------------------------------"
+
 echo "Try unnamed Module calls explicit module by module-path"
 $JAVA_9_HOME/bin/java -cp $LIBRARY/* -p $MODULAR com.greetings.Main
+
+echo "--------------------------------------"
 
 echo "Try unnamed Module calls explicit module by class-path"
 $JAVA_9_HOME/bin/java -cp $LIBRARY/*:$MODULAR/* com.greetings.Main
