@@ -26,8 +26,8 @@ You can test to run unnmaed module with named module by `bash ./OrdinaryJAR_call
 
 ## Current status (jdk9+181)
 
-|callee\caller|unnamed|automatic|named|
+|caller\callee|unnamed|automatic|named|
 |:-----------:|:-----:|:-------:|:---:|
 |unnamed|O|X|X|
-|automatic|X|O|O|
-|named|X|X|O|
+|automatic|X|O|X|
+|named|X|O|O|
