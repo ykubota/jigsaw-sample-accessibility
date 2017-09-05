@@ -8,6 +8,7 @@ This project aims to confirm accesiblity of each modules: `unnamed`, `automatic`
 
 ## Requirements
 
+* Linux
 * Download Java 9 EA build 181+ and set `JAVA_9_HOME` to /path/java9
 * Set `JAVA_8_HOME` to /path/java8
 
@@ -22,3 +23,11 @@ You can confirm by `bash ./OrdinaryJAR_calls_ModularJAR.sh`
 ## Can we run unnamed module with named/automatic modules?
 
 You can test to run unnmaed module with named module by `bash ./OrdinaryJAR_calls_ModularJAR.sh`
+
+## Current status (jdk9+181)
+
+|callee\caller|unnamed|automatic|named|
+|:-----------:|:-----:|:-------:|:---:|
+|unnamed|O|X|X|
+|automatic|X|X|O|
+|named|X|X|O|
